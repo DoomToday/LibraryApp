@@ -1,0 +1,40 @@
+[
+  {
+    "Id": 1,
+    "Title": "The C\u002B\u002B Programming Language",
+    "Author": "Bjarne Stroustrup",
+    "Keywords": [
+      "programming",
+      "cpp",
+      "guide"
+    ],
+    "CoverImagePath": null,
+    "IsAvailable": true,
+    "KeywordsDisplay": "programming, cpp, guide",
+    "StatusDisplay": "Available"
+  },
+  {
+    "Id": 2,
+    "Title": "C# in Depth",
+    "Author": "Jon Skeet",
+    "Keywords": [
+      "programming",
+      "csharp",
+      "advanced"
+    ],
+    "CoverImagePath": null,
+    "IsAvailable": true,
+    "KeywordsDisplay": "programming, csharp, advanced",
+    "StatusDisplay": "Available"
+  },
+  {
+    "Id": 3,
+    "Title": "1",
+    "Author": "2",
+    "Keywords": [],
+    "CoverImagePath": "Covers/b8c89b8b-a80b-49c6-ac92-b011ae129cb2.jpg",
+    "IsAvailable": true,
+    "KeywordsDisplay": "",
+    "StatusDisplay": "Available"
+  }
+]
