@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "F:\\VSProjects\\LibraryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|F:\\VSProjects\\LibraryApp\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -27,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\bookdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|F:\\VSProjects\\LibraryApp\\forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -46,11 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "F:\\VSProjects\\LibraryApp\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCYAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T20:03:47.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "BookDetailsForm.cs",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\BookDetailsForm.cs",
               "RelativeDocumentMoniker": "Forms\\BookDetailsForm.cs",
@@ -63,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BookDetailsForm.cs [Design]",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\BookDetailsForm.cs",
               "RelativeDocumentMoniker": "Forms\\BookDetailsForm.cs",
@@ -74,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainForm.cs",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Forms\\MainForm.cs",
@@ -87,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -95,12 +112,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T09:51:09.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T09:51:09.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Forms\\MainForm.cs",
@@ -112,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FormLogin.cs",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\FormLogin.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.cs",
@@ -125,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LibraryRepository.cs",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Services\\LibraryRepository.cs",
               "RelativeDocumentMoniker": "Services\\LibraryRepository.cs",
@@ -133,24 +149,24 @@
               "RelativeToolTip": "Services\\LibraryRepository.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAAAqwBcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T08:48:02.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T08:48:02.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Book.cs",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
               "ToolTip": "F:\\VSProjects\\LibraryApp\\Models\\Book.cs",
               "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA3wBcAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T08:46:34.898Z"
+              "WhenOpened": "2026-05-02T08:46:34.898Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FormLogin.cs [Design]",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\FormLogin.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.cs",
