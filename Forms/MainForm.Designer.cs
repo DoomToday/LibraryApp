@@ -99,6 +99,7 @@
             // 
             // cmbSearchType
             // 
+            cmbSearchType.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbSearchType.FormattingEnabled = true;
             cmbSearchType.Location = new Point(29, 110);
             cmbSearchType.Name = "cmbSearchType";

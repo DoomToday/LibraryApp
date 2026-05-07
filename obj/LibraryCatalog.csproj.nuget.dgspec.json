@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\VSProjects\\Курсова\\LibraryCatalog.csproj": {}
+    "F:\\VSProjects\\LibraryApp\\LibraryCatalog.csproj": {}
   },
   "projects": {
-    "F:\\VSProjects\\Курсова\\LibraryCatalog.csproj": {
+    "F:\\VSProjects\\LibraryApp\\LibraryCatalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\VSProjects\\Курсова\\LibraryCatalog.csproj",
+        "projectUniqueName": "F:\\VSProjects\\LibraryApp\\LibraryCatalog.csproj",
         "projectName": "LibraryCatalog",
-        "projectPath": "F:\\VSProjects\\Курсова\\LibraryCatalog.csproj",
+        "projectPath": "F:\\VSProjects\\LibraryApp\\LibraryCatalog.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "F:\\VSProjects\\Курсова\\obj\\",
+        "outputPath": "F:\\VSProjects\\LibraryApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
