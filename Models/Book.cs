@@ -3,12 +3,6 @@ using System.Collections.Generic;
 
 namespace LibraryCatalog.Models
 {
-    public enum UserRole
-    {
-        Guest,
-        Admin
-    }
-
     public class Book
     {
         public int Id { get; private set; }

@@ -1,0 +1,21 @@
+[
+  {
+    "Id": "85bb737c-1739-4d8b-9703-348a36f912dc",
+    "Username": "admin",
+    "PasswordHash": "UHd3Ahk4iQJQPeYc/4oEf\u002Bvvq3ostfFE3LFiHE78aVWil9AkSjvaUx1m476jRXcz",
+    "Role": 0,
+    "FavoriteBookIds": [
+      3,
+      2
+    ]
+  },
+  {
+    "Id": "77e76895-afab-4f45-8a9b-64d95ca39886",
+    "Username": "Test1",
+    "PasswordHash": "or8zIJEcvQfcFTarVl7aeOc4xUZksA0dvhBZR9HTl5W7CN86RnPvicJ7y9e4I5g7",
+    "Role": 2,
+    "FavoriteBookIds": [
+      1
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace LibraryManagement.Utilities
+namespace LibraryCatalog.Utilities
 {
     public static class PasswordHasher
     {

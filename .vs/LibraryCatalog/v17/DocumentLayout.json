@@ -3,56 +3,52 @@
   "WorkspaceRootPath": "F:\\VSProjects\\LibraryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\forms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\utilities\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:utilities\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|F:\\VSProjects\\LibraryApp\\forms\\bookdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\bookdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|F:\\VSProjects\\LibraryApp\\forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\librarycatalog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:librarycatalog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|F:\\VSProjects\\LibraryApp\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\services\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:services\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\forms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\forms\\bookdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\bookdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|F:\\VSProjects\\LibraryApp\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|F:\\VSProjects\\LibraryApp\\forms\\bookdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\bookdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|F:\\VSProjects\\LibraryApp\\forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\librarycatalog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:librarycatalog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|f:\\vsprojects\\libraryapp\\forms\\bookdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A450596-AD86-4DCE-A6F9-35684A3E77DB}|LibraryCatalog.csproj|solutionrelative:forms\\bookdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,100 +58,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Utilities\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "Utilities\\PasswordHasher.cs",
-              "ToolTip": "F:\\VSProjects\\LibraryApp\\Utilities\\PasswordHasher.cs",
-              "RelativeToolTip": "Utilities\\PasswordHasher.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAAEgAAAANAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AddUserForm.cs",
+              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\AddUserForm.cs",
+              "RelativeDocumentMoniker": "Forms\\AddUserForm.cs",
+              "ToolTip": "F:\\VSProjects\\LibraryApp\\Forms\\AddUserForm.cs",
+              "RelativeToolTip": "Forms\\AddUserForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T20:21:43.673Z",
+              "WhenOpened": "2026-05-08T10:24:14.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LibraryCatalog",
-              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\LibraryCatalog.csproj",
-              "RelativeDocumentMoniker": "LibraryCatalog.csproj",
-              "ToolTip": "F:\\VSProjects\\LibraryApp\\LibraryCatalog.csproj",
-              "RelativeToolTip": "LibraryCatalog.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-07T20:21:04.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "F:\\VSProjects\\LibraryApp\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAkAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AddUserForm.cs [Design]",
+              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\AddUserForm.cs",
+              "RelativeDocumentMoniker": "Forms\\AddUserForm.cs",
+              "ToolTip": "F:\\VSProjects\\LibraryApp\\Forms\\AddUserForm.cs [Design]",
+              "RelativeToolTip": "Forms\\AddUserForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T20:17:46.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService.cs",
-              "ToolTip": "F:\\VSProjects\\LibraryApp\\Services\\AuthService.cs",
-              "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T20:03:47.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\MainForm.cs",
-              "RelativeDocumentMoniker": "Forms\\MainForm.cs",
-              "ToolTip": "F:\\VSProjects\\LibraryApp\\Forms\\MainForm.cs",
-              "RelativeToolTip": "Forms\\MainForm.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAuwJoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T09:53:32.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\VSProjects\\LibraryApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T09:51:09.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\MainForm.cs",
-              "RelativeDocumentMoniker": "Forms\\MainForm.cs",
-              "ToolTip": "F:\\VSProjects\\LibraryApp\\Forms\\MainForm.cs [Design]",
-              "RelativeToolTip": "Forms\\MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T09:50:57.098Z",
+              "WhenOpened": "2026-05-08T10:19:52.34Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FormLogin.cs [Design]",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\FormLogin.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.cs",
@@ -167,20 +99,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "FormLogin.cs",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\FormLogin.cs",
               "RelativeDocumentMoniker": "Forms\\FormLogin.cs",
               "ToolTip": "F:\\VSProjects\\LibraryApp\\Forms\\FormLogin.cs",
               "RelativeToolTip": "Forms\\FormLogin.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAkwBcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T09:41:15.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "Forms\\MainForm.cs",
+              "ToolTip": "F:\\VSProjects\\LibraryApp\\Forms\\MainForm.cs",
+              "RelativeToolTip": "Forms\\MainForm.cs",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAewAQBAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T09:53:32.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "Forms\\MainForm.cs",
+              "ToolTip": "F:\\VSProjects\\LibraryApp\\Forms\\MainForm.cs [Design]",
+              "RelativeToolTip": "Forms\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T09:50:57.098Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\VSProjects\\LibraryApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T09:51:09.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BookDetailsForm.cs [Design]",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\BookDetailsForm.cs",
               "RelativeDocumentMoniker": "Forms\\BookDetailsForm.cs",
@@ -192,6 +162,44 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "F:\\VSProjects\\LibraryApp\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T20:17:46.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "F:\\VSProjects\\LibraryApp\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAA/wF8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:54:51.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LibraryCatalog.csproj",
+              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\LibraryCatalog.csproj",
+              "RelativeDocumentMoniker": "LibraryCatalog.csproj",
+              "ToolTip": "F:\\VSProjects\\LibraryApp\\LibraryCatalog.csproj",
+              "RelativeToolTip": "LibraryCatalog.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-07T20:21:04.473Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
               "Title": "BookDetailsForm.cs",
               "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Forms\\BookDetailsForm.cs",
@@ -200,32 +208,7 @@
               "RelativeToolTip": "Forms\\BookDetailsForm.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAAAFMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T11:03:37.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LibraryRepository.cs",
-              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Services\\LibraryRepository.cs",
-              "RelativeDocumentMoniker": "Services\\LibraryRepository.cs",
-              "ToolTip": "F:\\VSProjects\\LibraryApp\\Services\\LibraryRepository.cs",
-              "RelativeToolTip": "Services\\LibraryRepository.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAqwBcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T08:48:02.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Book.cs",
-              "DocumentMoniker": "F:\\VSProjects\\LibraryApp\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "F:\\VSProjects\\LibraryApp\\Models\\Book.cs",
-              "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T08:46:34.898Z"
+              "WhenOpened": "2026-05-02T11:03:37.544Z"
             }
           ]
         }

@@ -1,17 +1,24 @@
 ﻿using LibraryCatalog.Models;
-using LibraryCatalog.Services;
+using LibraryCatalog.Repositories;  
+
 namespace LibraryCatalog.Forms
 {
     public partial class MainForm : Form
     {
+        private User _currentUser; // Store the whole user object
         private UserRole _currentUserRole;
-        private LibraryRepository _repository;
+        private LibraryRepository _libraryRepository;
+        private UserRepository _userRepository;
 
-        public MainForm(UserRole role)
+        public MainForm(User user, UserRepository userRepository)
         {
             InitializeComponent();
-            _currentUserRole = role;
-            _repository = new LibraryRepository(); // Initialize our backend!
+            _currentUser = user;
+            // Fallback to Guest if a null user is somehow passed
+            _currentUserRole = user != null ? user.Role : UserRole.Guest;
+
+            _libraryRepository = new LibraryRepository();
+            _userRepository = userRepository;
 
             ApplyPermissions();
 
@@ -21,31 +28,47 @@ namespace LibraryCatalog.Forms
             cmbSearchType.Items.Add("Keyword");
             cmbSearchType.SelectedIndex = 0; // Default to Title
 
-            RefreshGrid(_repository.GetAllBooks());
+            RefreshGrid(_libraryRepository.GetAllBooks());
         }
 
         private void ApplyPermissions()
         {
+            btnAddBook.Visible = false;
+            btnEditBook.Visible = false;
+            btnDeleteBook.Visible = false;
+            btnToggleStatus.Visible = false;
+            btnAddUser.Visible = false;
+
             if (_currentUserRole == UserRole.Guest)
             {
-                btnAddBook.Visible = false;
-                btnEditBook.Visible = false;
-                btnDeleteBook.Visible = false;
-                btnToggleStatus.Visible = false;
+                btnToggleFavorite.Visible = false;
+                chkShowFavorites.Visible = false;
             }
             else
+            {
+                btnToggleFavorite.Visible = true;
+                chkShowFavorites.Visible = true;
+            }
+
+            if (_currentUserRole == UserRole.Admin)
             {
                 btnAddBook.Visible = true;
                 btnEditBook.Visible = true;
                 btnDeleteBook.Visible = true;
                 btnToggleStatus.Visible = true;
+                btnAddUser.Visible = true;
             }
         }
         private void RefreshGrid(List<Book> books)
         {
+            if (chkShowFavorites.Checked && _currentUserRole != UserRole.Guest)
+            {
+                var favIds = _currentUser.FavoriteBookIds ?? new List<int>();
+                books = books.Where(b => favIds.Contains(b.Id)).ToList();
+            }
+
             dgvBooks.DataSource = null;
             dgvBooks.DataSource = books;
-
             dgvBooks.AllowUserToAddRows = false;
 
             if (dgvBooks.Columns["Keywords"] != null) dgvBooks.Columns["Keywords"].Visible = false;
@@ -72,11 +95,11 @@ namespace LibraryCatalog.Forms
             List<Book> results = new List<Book>();
 
             if (searchType == "Title")
-                results = _repository.SearchByTitle(query);
+                results = _libraryRepository.SearchByTitle(query);
             else if (searchType == "Author")
-                results = _repository.SearchByAuthor(query);
+                results = _libraryRepository.SearchByAuthor(query);
             else if (searchType == "Keyword")
-                results = _repository.SearchByKeyword(query);
+                results = _libraryRepository.SearchByKeyword(query);
 
             RefreshGrid(results);
         }
@@ -84,7 +107,7 @@ namespace LibraryCatalog.Forms
         private void btnReset_Click(object sender, EventArgs e)
         {
             txtSearchQuery.Clear();
-            RefreshGrid(_repository.GetAllBooks());
+            RefreshGrid(_libraryRepository.GetAllBooks());
         }
 
         // --- ADMIN CONTROLS ---
@@ -96,9 +119,9 @@ namespace LibraryCatalog.Forms
             // Grab the ID from the selected row
             int bookId = (int)dgvBooks.SelectedRows[0].Cells["Id"].Value;
 
-            if (_repository.ToggleBookStatus(bookId))
+            if (_libraryRepository.ToggleBookStatus(bookId))
             {
-                RefreshGrid(_repository.GetAllBooks());
+                RefreshGrid(_libraryRepository.GetAllBooks());
             }
         }
 
@@ -114,8 +137,8 @@ namespace LibraryCatalog.Forms
 
             if (confirmResult == DialogResult.Yes)
             {
-                _repository.DeleteBook(bookId);
-                RefreshGrid(_repository.GetAllBooks());
+                _libraryRepository.DeleteBook(bookId);
+                RefreshGrid(_libraryRepository.GetAllBooks());
             }
         }
 
@@ -127,8 +150,8 @@ namespace LibraryCatalog.Forms
                 if (detailsForm.ShowDialog() == DialogResult.OK)
                 {
                     // Pass the new CoverImagePath to the repository!
-                    _repository.AddBook(detailsForm.BookTitle, detailsForm.BookAuthor, detailsForm.BookKeywords, detailsForm.CoverImagePath);
-                    RefreshGrid(_repository.GetAllBooks());
+                    _libraryRepository.AddBook(detailsForm.BookTitle, detailsForm.BookAuthor, detailsForm.BookKeywords, detailsForm.CoverImagePath);
+                    RefreshGrid(_libraryRepository.GetAllBooks());
                 }
             }
         }
@@ -138,7 +161,7 @@ namespace LibraryCatalog.Forms
             if (dgvBooks.SelectedRows.Count == 0) return;
 
             int bookId = (int)dgvBooks.SelectedRows[0].Cells["Id"].Value;
-            var bookToEdit = _repository.GetAllBooks().FirstOrDefault(b => b.Id == bookId);
+            var bookToEdit = _libraryRepository.GetAllBooks().FirstOrDefault(b => b.Id == bookId);
 
             if (bookToEdit != null)
             {
@@ -147,8 +170,8 @@ namespace LibraryCatalog.Forms
                     if (detailsForm.ShowDialog() == DialogResult.OK)
                     {
                         // Update it in the repository!
-                        _repository.UpdateBook(bookId, detailsForm.BookTitle, detailsForm.BookAuthor, detailsForm.BookKeywords, detailsForm.CoverImagePath);
-                        RefreshGrid(_repository.GetAllBooks());
+                        _libraryRepository.UpdateBook(bookId, detailsForm.BookTitle, detailsForm.BookAuthor, detailsForm.BookKeywords, detailsForm.CoverImagePath);
+                        RefreshGrid(_libraryRepository.GetAllBooks());
                     }
                 }
             }
@@ -162,7 +185,7 @@ namespace LibraryCatalog.Forms
             if (dgvBooks.SelectedRows.Count > 0)
             {
                 int bookId = (int)dgvBooks.SelectedRows[0].Cells["Id"].Value;
-                var selectedBook = _repository.GetAllBooks().FirstOrDefault(b => b.Id == bookId);
+                var selectedBook = _libraryRepository.GetAllBooks().FirstOrDefault(b => b.Id == bookId);
 
                 // Check if the book actually has an image path, and if that file still exists on the computer
                 if (selectedBook != null && !string.IsNullOrEmpty(selectedBook.CoverImagePath) && System.IO.File.Exists(selectedBook.CoverImagePath))
@@ -175,6 +198,67 @@ namespace LibraryCatalog.Forms
                     }
                 }
             }
+        }
+
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+            // Extra safety check just in case the button was somehow clicked
+            if (_currentUserRole != UserRole.Admin)
+            {
+                MessageBox.Show("You do not have permission to perform this action.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            using (var userForm = new AddUserForm(_userRepository))
+            {
+                userForm.ShowDialog();
+            }
+        }
+
+        private void btnToggleFavorite_Click(object sender, EventArgs e)
+        {
+            if (dgvBooks.SelectedRows.Count == 0) return;
+
+            int bookId = (int)dgvBooks.SelectedRows[0].Cells["Id"].Value;
+
+            // Update the JSON database
+            _userRepository.ToggleFavorite(_currentUser.Id, bookId);
+
+            // We need to refresh our local _currentUser object so it has the latest data
+            // Otherwise the grid won't update properly if the checkbox is checked!
+            _currentUser = _userRepository.GetUserByUsername(_currentUser.Username);
+
+            // Redraw the grid
+            RefreshGrid(_libraryRepository.GetAllBooks());
+        }
+
+        private void dgvBooks_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            if (_currentUserRole == UserRole.Guest || _currentUser == null || _currentUser.FavoriteBookIds == null)
+                return;
+
+            foreach (DataGridViewRow row in dgvBooks.Rows)
+            {
+                int bookId = (int)row.Cells["Id"].Value;
+
+                if (_currentUser.FavoriteBookIds.Contains(bookId))
+                {
+
+                    row.DefaultCellStyle.BackColor = Color.LightPink;
+
+
+                    row.DefaultCellStyle.Font = new Font(dgvBooks.Font, FontStyle.Bold);
+                }
+                else
+                {
+                    row.DefaultCellStyle.BackColor = Color.White;
+                }
+            }
+        }
+
+        private void chkShowFavorites_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshGrid(_libraryRepository.GetAllBooks());
         }
     }
 }

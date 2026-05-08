@@ -1,47 +1,67 @@
+using LibraryCatalog.Forms;
 using LibraryCatalog.Models;
-using LibraryCatalog.Services;
-using LibraryManagement.Utilities;
-using System;
-using System.Windows.Forms;
+using LibraryCatalog.Repositories;
+using LibraryCatalog.Utilities;
 
-namespace Курсова
+namespace LibraryCatalog
 {
     public partial class LoginForm : Form
     {
-        private AuthService _authService;
+
+        private UserRepository _userRepository;
 
         // The Main Form will read this after the Login Form closes
-        public UserRole LoggedInRole { get; private set; }
+        public User LoggedInUser { get; private set; }
 
-        public LoginForm()
+        public LoginForm(UserRepository userRepository)
         {
             InitializeComponent();
-            _authService = new AuthService();
+            _userRepository = userRepository;
         }
 
         // The button where they type the password
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (_authService.AuthenticateAdmin(txtUsername.Text, txtPassword.Text))
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text;
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                LoggedInRole = UserRole.Admin;
-                this.DialogResult = DialogResult.OK; // This tells the app the login was successful
-                this.Close();
+                MessageBox.Show("Enter both a username and password.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+
+            // 1. Try to pull the user from the JSON repository
+            User user = _userRepository.GetUserByUsername(username);
+
+            // If the user is null, they don't exist. 
+            // IMPORTANT: Never tell the user "Username not found". That's a security vulnerability.
+            // Give a vague error for both wrong username AND wrong password.
+            if (user == null || !PasswordHasher.VerifyPassword(password, user.PasswordHash))
             {
-                // Don't just let them in! Yell at them!
-                MessageBox.Show("Invalid username or password!", "Authentication Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtPassword.Clear();
-                txtPassword.Focus();
+                MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+
+            // If you make it here, the login was successful!
+            MessageBox.Show($"Welcome back, {user.Role}!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // Set the property so Program.cs can read it
+            this.LoggedInUser = user;
+
+            // Tell Program.cs the login was a success
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         // The separate Guest button
         private void btnGuest_Click(object sender, EventArgs e)
         {
-            LoggedInRole = UserRole.Guest;
-            this.DialogResult = DialogResult.OK; // Guest entry is still a "successful" form completion
+            // Create a dummy user object on the fly for the guest
+            this.LoggedInUser = new User("Guest", "", UserRole.Guest);
+
+            // Tell Program.cs the guest entry was a success
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
     }

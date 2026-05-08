@@ -30,6 +30,8 @@
         {
             dgvBooks = new DataGridView();
             gbSearch = new GroupBox();
+            chkShowFavorites = new CheckBox();
+            btnToggleFavorite = new Button();
             btnReset = new Button();
             btnSearch = new Button();
             cmbSearchType = new ComboBox();
@@ -39,6 +41,7 @@
             btnEditBook = new Button();
             btnDeleteBook = new Button();
             groupBox1 = new GroupBox();
+            btnAddUser = new Button();
             btnToggleStatus = new Button();
             pbCover = new PictureBox();
             label3 = new Label();
@@ -53,18 +56,21 @@
             // 
             dgvBooks.AllowUserToAddRows = false;
             dgvBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBooks.Location = new Point(23, 190);
+            dgvBooks.Location = new Point(23, 254);
             dgvBooks.Name = "dgvBooks";
             dgvBooks.ReadOnly = true;
             dgvBooks.RowHeadersVisible = false;
             dgvBooks.RowHeadersWidth = 62;
             dgvBooks.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvBooks.Size = new Size(1114, 558);
+            dgvBooks.Size = new Size(1114, 494);
             dgvBooks.TabIndex = 0;
+            dgvBooks.DataBindingComplete += dgvBooks_DataBindingComplete;
             dgvBooks.SelectionChanged += dgvBooks_SelectionChanged;
             // 
             // gbSearch
             // 
+            gbSearch.Controls.Add(chkShowFavorites);
+            gbSearch.Controls.Add(btnToggleFavorite);
             gbSearch.Controls.Add(btnReset);
             gbSearch.Controls.Add(btnSearch);
             gbSearch.Controls.Add(cmbSearchType);
@@ -72,10 +78,31 @@
             gbSearch.Font = new Font("Sylfaen", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             gbSearch.Location = new Point(23, 12);
             gbSearch.Name = "gbSearch";
-            gbSearch.Size = new Size(578, 172);
+            gbSearch.Size = new Size(578, 236);
             gbSearch.TabIndex = 1;
             gbSearch.TabStop = false;
             gbSearch.Text = "Search";
+            // 
+            // chkShowFavorites
+            // 
+            chkShowFavorites.AutoSize = true;
+            chkShowFavorites.Location = new Point(29, 176);
+            chkShowFavorites.Name = "chkShowFavorites";
+            chkShowFavorites.Size = new Size(286, 40);
+            chkShowFavorites.TabIndex = 5;
+            chkShowFavorites.Text = "Show Favorites Only";
+            chkShowFavorites.UseVisualStyleBackColor = true;
+            chkShowFavorites.CheckedChanged += chkShowFavorites_CheckedChanged;
+            // 
+            // btnToggleFavorite
+            // 
+            btnToggleFavorite.Location = new Point(338, 170);
+            btnToggleFavorite.Name = "btnToggleFavorite";
+            btnToggleFavorite.Size = new Size(215, 46);
+            btnToggleFavorite.TabIndex = 4;
+            btnToggleFavorite.Text = "Toggle Favorite";
+            btnToggleFavorite.UseVisualStyleBackColor = true;
+            btnToggleFavorite.Click += btnToggleFavorite_Click;
             // 
             // btnReset
             // 
@@ -129,7 +156,7 @@
             btnAddBook.Font = new Font("Sylfaen", 14F);
             btnAddBook.Location = new Point(17, 43);
             btnAddBook.Name = "btnAddBook";
-            btnAddBook.Size = new Size(235, 46);
+            btnAddBook.Size = new Size(172, 46);
             btnAddBook.TabIndex = 4;
             btnAddBook.Text = "Add Book";
             btnAddBook.UseVisualStyleBackColor = true;
@@ -140,7 +167,7 @@
             btnEditBook.Font = new Font("Sylfaen", 14F);
             btnEditBook.Location = new Point(17, 108);
             btnEditBook.Name = "btnEditBook";
-            btnEditBook.Size = new Size(235, 46);
+            btnEditBook.Size = new Size(231, 46);
             btnEditBook.TabIndex = 5;
             btnEditBook.Text = "Edit Book";
             btnEditBook.UseVisualStyleBackColor = true;
@@ -149,9 +176,9 @@
             // btnDeleteBook
             // 
             btnDeleteBook.Font = new Font("Sylfaen", 14F);
-            btnDeleteBook.Location = new Point(285, 43);
+            btnDeleteBook.Location = new Point(195, 45);
             btnDeleteBook.Name = "btnDeleteBook";
-            btnDeleteBook.Size = new Size(235, 46);
+            btnDeleteBook.Size = new Size(172, 46);
             btnDeleteBook.TabIndex = 6;
             btnDeleteBook.Text = "Delete Book";
             btnDeleteBook.UseVisualStyleBackColor = true;
@@ -159,6 +186,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(btnAddUser);
             groupBox1.Controls.Add(btnToggleStatus);
             groupBox1.Controls.Add(btnAddBook);
             groupBox1.Controls.Add(btnDeleteBook);
@@ -167,17 +195,28 @@
             groupBox1.ForeColor = SystemColors.ControlText;
             groupBox1.Location = new Point(612, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(525, 172);
+            groupBox1.Size = new Size(556, 172);
             groupBox1.TabIndex = 7;
             groupBox1.TabStop = false;
             groupBox1.Text = "Admin";
             // 
+            // btnAddUser
+            // 
+            btnAddUser.Font = new Font("Sylfaen", 14F);
+            btnAddUser.Location = new Point(374, 45);
+            btnAddUser.Name = "btnAddUser";
+            btnAddUser.Size = new Size(172, 46);
+            btnAddUser.TabIndex = 8;
+            btnAddUser.Text = "Add User";
+            btnAddUser.UseVisualStyleBackColor = true;
+            btnAddUser.Click += btnAddUser_Click;
+            // 
             // btnToggleStatus
             // 
             btnToggleStatus.Font = new Font("Sylfaen", 14F);
-            btnToggleStatus.Location = new Point(285, 110);
+            btnToggleStatus.Location = new Point(315, 108);
             btnToggleStatus.Name = "btnToggleStatus";
-            btnToggleStatus.Size = new Size(235, 46);
+            btnToggleStatus.Size = new Size(231, 46);
             btnToggleStatus.TabIndex = 7;
             btnToggleStatus.Text = "Checkout/Return";
             btnToggleStatus.UseVisualStyleBackColor = true;
@@ -216,7 +255,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1604, 830);
+            ClientSize = new Size(1599, 821);
             Controls.Add(label1);
             Controls.Add(label3);
             Controls.Add(pbCover);
@@ -252,5 +291,8 @@
         private PictureBox pbCover;
         private Label label3;
         private Label label1;
+        private Button btnAddUser;
+        private CheckBox chkShowFavorites;
+        private Button btnToggleFavorite;
     }
 }

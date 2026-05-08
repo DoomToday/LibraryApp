@@ -1,7 +1,8 @@
 using LibraryCatalog.Forms;
 using LibraryCatalog.Models;
+using LibraryCatalog.Repositories;
 
-namespace Курсова
+namespace LibraryCatalog
 {
     internal static class Program
     {
@@ -14,21 +15,21 @@ namespace Курсова
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // 1. Show the Login Form FIRST
-            using (var loginForm = new LoginForm())
+            var centralUserRepository = new UserRepository();
+
+            using (var loginForm = new LoginForm(centralUserRepository))
             {
                 // ShowDialog pauses execution here until the Login Form is closed
                 if (loginForm.ShowDialog() == DialogResult.OK)
                 {
-                    // 2. If login was successful (Admin or Guest), grab the role
-                    UserRole role = loginForm.LoggedInRole;
+                    // Grab the FULL User object from the login form
+                    User loggedInUser = loginForm.LoggedInUser;
 
-                    // 3. NOW we run the Main Form, and we pass the role directly to it!
-                    Application.Run(new MainForm(role));
+                    // Pass the User directly to the MainForm
+                    Application.Run(new MainForm(loggedInUser, centralUserRepository));
                 }
                 else
                 {
-                    // If they clicked the 'X' on the login form, just exit gracefully.
                     Application.Exit();
                 }
             }

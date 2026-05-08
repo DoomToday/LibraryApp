@@ -1,7 +1,7 @@
 ﻿using LibraryCatalog.Models;
 using System.Text.Json;
 
-namespace LibraryCatalog.Services
+namespace LibraryCatalog.Repositories
 {
     public class LibraryRepository
     {

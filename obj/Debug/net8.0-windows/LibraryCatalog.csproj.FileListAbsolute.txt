@@ -22,7 +22,6 @@ F:\VSProjects\LibraryApp\bin\Debug\net8.0-windows\LibraryCatalog.runtimeconfig.j
 F:\VSProjects\LibraryApp\bin\Debug\net8.0-windows\LibraryCatalog.dll
 F:\VSProjects\LibraryApp\bin\Debug\net8.0-windows\LibraryCatalog.pdb
 F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\LibraryCatalog.Forms.BookDetailsForm.resources
-F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\Курсова.LoginForm.resources
 F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\LibraryCatalog.Forms.MainForm.resources
 F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\LibraryCatalog.csproj.GenerateResource.cache
 F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\LibraryCatalog.GeneratedMSBuildEditorConfig.editorconfig
@@ -35,3 +34,5 @@ F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\refint\LibraryCatalog.dll
 F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\LibraryCatalog.pdb
 F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\LibraryCatalog.genruntimeconfig.cache
 F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\ref\LibraryCatalog.dll
+F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\LibraryCatalog.LoginForm.resources
+F:\VSProjects\LibraryApp\obj\Debug\net8.0-windows\LibraryCatalog.Forms.AddUserForm.resources

@@ -1,4 +1,4 @@
-﻿namespace Курсова
+﻿namespace LibraryCatalog
 {
     partial class LoginForm
     {
@@ -55,26 +55,29 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Sylfaen", 10F);
             label1.Location = new Point(144, 124);
             label1.Name = "label1";
-            label1.Size = new Size(91, 25);
+            label1.Size = new Size(99, 26);
             label1.TabIndex = 2;
             label1.Text = "Username";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Sylfaen", 10F);
             label2.Location = new Point(148, 180);
             label2.Name = "label2";
-            label2.Size = new Size(87, 25);
+            label2.Size = new Size(92, 26);
             label2.TabIndex = 3;
             label2.Text = "Password";
             // 
             // btnLogin
             // 
+            btnLogin.Font = new Font("Sylfaen", 14F);
             btnLogin.Location = new Point(329, 246);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(144, 37);
+            btnLogin.Size = new Size(144, 58);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
@@ -82,9 +85,10 @@
             // 
             // btnGuest
             // 
-            btnGuest.Location = new Point(290, 313);
+            btnGuest.Font = new Font("Sylfaen", 14F);
+            btnGuest.Location = new Point(265, 310);
             btnGuest.Name = "btnGuest";
-            btnGuest.Size = new Size(216, 37);
+            btnGuest.Size = new Size(270, 65);
             btnGuest.TabIndex = 5;
             btnGuest.Text = "Continue as Guest";
             btnGuest.UseVisualStyleBackColor = true;
